@@ -5,9 +5,9 @@
       name: "ZenTown",
       image: "/images/portfolio/zentown.png",
       description:
-        "Le site sur lequel vous naviguez actuellement. Développé avec Svelte.",
+        "Le site sur lequel vous naviguez actuellement. La version originale était développée avec React, la présente version est réalisée avec Svelte.",
       live: "https://zentown.dev",
-      source: "",
+      source: "https://github.com/Zenpanic/zentown2",
     },
     {
       name: "Way of Speaking",
