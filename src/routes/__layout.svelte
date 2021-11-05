@@ -5,7 +5,7 @@
 </script>
 
 <nav>
-  <a href="/"><img class="logoNav" src={logoNav} alt="ZenTown" /></a>
+  <a href="/" class="logoWrapper"><img class="logoNav" src={logoNav} alt="ZenTown" /></a>
   <a class="navlink" href="/">Home</a>
   <!-- <a class="navlink" href="/services">Services</a> -->
   <a class="navlink" href="/portfolio">Portfolio</a>
@@ -119,7 +119,7 @@
       width: 100vw;
     }
 
-    .logoNav {
+    .logoWrapper {
       display: none;
     }
   }
