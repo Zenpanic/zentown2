@@ -47,7 +47,7 @@
 <style>
   nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: black;
@@ -61,6 +61,10 @@
     opacity: 85%;
   }
 
+  .logoWrapper {
+    margin-bottom: 3em;
+  }
+
   .logoNav {
     width: 150px;
     height: 150px;
@@ -71,6 +75,7 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    margin: 0.5em;
   }
 
   .navlink:hover,
@@ -117,6 +122,11 @@
       flex-direction: row;
       height: 50px;
       width: 100vw;
+      justify-content: space-between;
+    }
+
+    .navlink {
+      margin: 0.5em;
     }
 
     .logoWrapper {
