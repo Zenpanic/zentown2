@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.ico" />
@@ -8,6 +8,12 @@
 		<link rel="stylesheet" href="/global.css" />
 		<title>ZenTown</title>
 		%svelte.head%
+		<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+		<script>
+			Weglot.initialize({
+				api_key: 'wg_2a1a6a1769d0a70f6c26b2108a548abc6'
+			});
+		</script>
 	</head>
 	<body>
 		<div id="svelte">%svelte.body%</div>
