@@ -1,6 +1,8 @@
 <script> 
     import validator from "validator";
 
+    const src = "/images/webdev.png";
+
     let name = '';
     let contact = '';
     let message = '';
@@ -37,6 +39,9 @@
 <h2 class="pageTitle">Contactez-nous pour toute question concernant votre projet, nous sommes là pour le concrétiser !</h2>
 
 <div class="contactContainer">
+
+    <img src={src} alt="web dev" class="illustration" />
+
     <div class="contactElement">
         <label class="formLabel" for="email">E-mail</label>
         <input class="formInput" bind:value={contact} autocomplete="off" placeholder="E-mail" name="email" id="email"/>
@@ -57,6 +62,8 @@
         <button on:click={sendEmail} class="contactButton" disabled={loading || !validated}>Envoyer</button>
         {#if !validated}<p class="infoEmail">Merci de remplir tous les champs pour pouvoir envoyer votre message.</p>{/if}
     </div>
+
+   
     
 </div>
 
@@ -64,6 +71,12 @@
     .pageTitle {
         text-align: center;
         margin: 2em auto;
+    }
+
+    .illustration {
+        margin: 0 0.5em 2em 0.5em;
+        max-width: 100%;
+        height: auto;        
     }
 
     .contactContainer {
