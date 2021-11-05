@@ -10,5 +10,9 @@
     "@sveltejs/kit": "next",
     "svelte": "^3.42.6"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "nodemailer": "^6.7.0",
+    "validator": "^13.7.0"
+  }
 }

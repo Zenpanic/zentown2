@@ -1,0 +1,126 @@
+<script>
+  const github = "/images/github.png";
+  const linkedin = "/images/linkedin.png";
+  const logoNav = "/images/logo_transparent_nav.png";
+</script>
+
+<nav>
+  <a href="/"><img class="logoNav" src={logoNav} alt="ZenTown" /></a>
+  <a class="navlink" href="/">Home</a>
+  <!-- <a class="navlink" href="/services">Services</a> -->
+  <a class="navlink" href="/portfolio">Portfolio</a>
+  <a class="navlink" href="/contact">Contact</a>
+</nav>
+
+<div class="separator" />
+
+<slot></slot>
+
+<footer>
+  <div class="social">
+    <a
+      class="outerLink"
+      href="https://github.com/Zenpanic"
+      target="_blank"
+      rel="noopener"
+    >
+      <img src={github} alt="github" />
+    </a>
+    <a
+      class="outerLink"
+      href="https://www.linkedin.com/in/s-belmo"
+      target="_blank"
+      rel="noopener"
+    >
+      <img src={linkedin} alt="linkedin" />
+    </a>
+  </div>
+
+  <hr class="separator" />
+
+  <div class="legal">
+    <a class="legalElement" href="/legal">Mentions Légales</a>
+    <a class="legalElement" href="/terms">CGV/CGU</a>
+  </div>
+</footer>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100vh;
+    opacity: 85%;
+  }
+
+  .logoNav {
+    width: 150px;
+    height: 150px;
+  }
+
+  .navlink,
+  .navlink:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .navlink:hover,
+  .legalElement:hover {
+    color: #ff1154;
+    font-weight: 600;
+  }
+
+  footer {
+    margin-top: 5em;
+  }
+
+  .separator {
+    margin: 1em 0 1em 0;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outerLink {
+    margin: 0 2em;
+    cursor: pointer;
+  }
+
+  .legal {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .legalElement,
+  .legalElement:visited {
+    margin: 0 2em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #eeeeee;
+  }
+
+  @media screen and (max-width: 1000px) {
+    nav {
+      flex-direction: row;
+      height: 50px;
+      width: 100vw;
+    }
+
+    .logoNav {
+      display: none;
+    }
+  }
+</style>
