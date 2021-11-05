@@ -5,7 +5,7 @@
 <div class="projectContainer">
   <h3 class="title">{item.name}</h3>
   <a href={item.live} target="_blank" rel="noopener">
-    <img class="picture" src={item.image} alt={item.name} /></a
+    <img class="picture" src={item.image} alt={item.name} loading="lazy" /></a
   >
   <p class="description">{item.description}</p>
 

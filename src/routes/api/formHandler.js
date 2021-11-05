@@ -18,7 +18,7 @@ export async function post(request) {
             }
         });
 
-        await transporter.sendMail({
+        const emailSent = await transporter.sendMail({
             from: EMAIL_USER,
             to: EMAIL_USER,
             subject: 'Nouveau message sur ZenTown!',
@@ -26,6 +26,8 @@ export async function post(request) {
             
             ${data.message}`
         });
+
+        console.log(emailSent);
     }
 
     catch(error) {

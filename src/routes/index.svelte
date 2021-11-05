@@ -9,16 +9,13 @@
 
 <header class="headerContainer">
   <div class="mainHeader">
-    <img src={logo} alt="ZenTown" class="logo" />
+    <img src={logo} alt="ZenTown" class="logo" loading="eager" />
     <h1 class="mainSubtitle">Développement Web</h1>
   </div>
   <h2 class="slogan">Make your web dreams come true!</h2>
 </header>
 
-<h2 class="presentationTitle">
-  <span class="siteTitle">ZenTown</span>
-  <span>: construire une présence en ligne</span>
-</h2>
+<h2 class="presentationTitle">ZenTown: construire une présence en ligne</h2>
 
 <hr />
 
@@ -44,7 +41,7 @@
       sur-mesure !
     </p>
   </div>
-  <img src={presence} class="homePicture" alt="Presence" />
+  <img src={presence} class="homePicture" alt="Presence" loading="lazy" />
 </section>
 
 <h2 class="presentationTitle" id="titleRight">La qualité professionnelle</h2>
@@ -52,7 +49,7 @@
 <hr />
 
 <section class="presentationSubcontainer" id="part2">
-  <img src={robot} class="homePicture" alt="Robot" />
+  <img src={robot} class="homePicture" alt="Robot" loading="lazy"/>
   <div class="presentationTextContainer">
     <p class="presentation alignRight">
       ZenTown existe pour vous offrir les solutions les plus adaptées à vos

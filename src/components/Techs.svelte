@@ -16,6 +16,7 @@
       name: "typescript",
     },
     { src: "/images/tech/svelte.png", name: "svelte" },
+    { src: "/images/tech/jest.png", name: "jest"},
   ];
 </script>
 
@@ -23,7 +24,7 @@
 
 <div class="techContainer">
   {#each techStack as tech (tech.name)}
-    <img src={tech.src} alt={tech.name} class="techImage" />
+    <img src={tech.src} alt={tech.name} class="techImage" loading="lazy"/>
   {/each}
 </div>
 

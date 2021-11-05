@@ -24,7 +24,7 @@
       target="_blank"
       rel="noopener"
     >
-      <img src={github} alt="github" />
+      <img src={github} alt="github" loading="lazy" />
     </a>
     <a
       class="outerLink"
@@ -32,7 +32,7 @@
       target="_blank"
       rel="noopener"
     >
-      <img src={linkedin} alt="linkedin" />
+      <img src={linkedin} alt="linkedin" loading="lazy" />
     </a>
   </div>
 
@@ -86,6 +86,7 @@
 
   footer {
     margin-top: 5em;
+    margin-bottom: 2em;
   }
 
   .separator {

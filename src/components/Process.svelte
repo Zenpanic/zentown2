@@ -21,7 +21,12 @@
         complet.
       </p>
     </div>
-    <img src={firstContact} alt="First contact" class="processPicture" />
+    <img
+      src={firstContact}
+      alt="First contact"
+      class="processPicture"
+      loading="lazy"
+    />
   </article>
 
   <article class="processSubcontainer">
@@ -38,6 +43,7 @@
       src={projectValidation}
       alt="Project validation"
       class="processPicture"
+      loading="lazy"
     />
   </article>
 
@@ -52,7 +58,12 @@
         requises.
       </p>
     </div>
-    <img src={prototype} alt="Prototype" class="processPicture" />
+    <img
+      src={prototype}
+      alt="Prototype"
+      class="processPicture"
+      loading="lazy"
+    />
   </article>
 
   <article class="processSubcontainer">
@@ -68,7 +79,12 @@
         frais toute anomalie qui pourrait survenir durant cette période.
       </p>
     </div>
-    <img src={deployment} alt="Déploiement" class="processPicture" />
+    <img
+      src={deployment}
+      alt="Déploiement"
+      class="processPicture"
+      loading="lazy"
+    />
   </article>
 
   <article class="processSubcontainer">
@@ -81,7 +97,12 @@
         site.
       </p>
     </div>
-    <img src={maintenance} alt="Déploiement" class="processPicture" />
+    <img
+      src={maintenance}
+      alt="Déploiement"
+      class="processPicture"
+      loading="lazy"
+    />
   </article>
 </section>
 
