@@ -5,7 +5,9 @@
 </script>
 
 <nav>
-  <a href="/" class="logoWrapper"><img class="logoNav" src={logoNav} alt="ZenTown" /></a>
+  <a href="/" class="logoWrapper"
+    ><img class="logoNav" src={logoNav} alt="ZenTown" /></a
+  >
   <a class="navlink" href="/">Home</a>
   <!-- <a class="navlink" href="/services">Services</a> -->
   <a class="navlink" href="/portfolio">Portfolio</a>
@@ -14,7 +16,7 @@
 
 <div class="separator" />
 
-<slot></slot>
+<slot />
 
 <footer>
   <div class="social">
@@ -51,7 +53,6 @@
     align-items: center;
     flex-direction: column;
     background-color: black;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -122,7 +123,7 @@
     nav {
       flex-direction: row;
       height: 50px;
-      width: 100vw;
+      width: 100%;
       justify-content: space-between;
     }
 

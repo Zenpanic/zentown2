@@ -1,24 +1,32 @@
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+dotenv.config();
 
-const EMAIL_USER = import.meta.env.VITE_EMAIL_USER;
-const EMAIL_PASS = import.meta.env.VITE_EMAIL_PASS;
+const EMAIL_USER = process.env['EMAIL_USER'];
+const EMAIL_PASS = process.env['EMAIL_PASS'];
 
 export async function post(request) {
     const data = request.body;
 
+    console.log('ids', EMAIL_PASS, EMAIL_USER)
+
     if (!data.message || !data.contact) return {body: {message: 'error'}};
 
     try {
+        console.log('stop1');
         let transporter = nodemailer.createTransport({
-            host: "smtp-relay.sendinblue.com",
-            port: 587,
+            service: 'SendinBlue',
             auth: {
                 user: EMAIL_USER,
                 pass: EMAIL_PASS
             }
         });
 
-        const emailSent = await transporter.sendMail({
+        console.log('transporter', transporter);
+
+        console.log('stop2')
+
+        await transporter.sendMail({
             from: EMAIL_USER,
             to: EMAIL_USER,
             subject: 'Nouveau message sur ZenTown!',
@@ -27,10 +35,11 @@ export async function post(request) {
             ${data.message}`
         });
 
-        console.log(emailSent);
+        console.log('stop3')
     }
 
     catch(error) {
+        console.log('error', error);
         return {body: {message: `error: ${error}`}};
     }
 
