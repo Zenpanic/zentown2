@@ -7,9 +7,8 @@ const EMAIL_PASS = process.env['EMAIL_PASS'];
 const EMAIL_RECIPIENT = process.env['EMAIL_RECIPIENT'];
 
 export async function post(request) {
-    const data = request.body;
 
-    console.log('ids', EMAIL_PASS, EMAIL_USER)
+    const data = request.body;
 
     if (!data.message || !data.contact) return {body: {message: 'error'}};
 
@@ -36,18 +35,13 @@ export async function post(request) {
             subject: mailObj.subject,
             text: mailObj.message
         });
+        return {body: {message: 'ok'}};
 
-        console.log('ok', mailStatus.messageId);
-        console.log(mailStatus);
-        return {body: {message: 'ok'}}
     } catch (error) {
-        console.log(error);
+        
         return{body: {message: 'error'}};
     }
-
-
-
-}
+};
 
     /* try {
         console.log('stop1');
