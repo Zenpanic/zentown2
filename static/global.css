@@ -17,6 +17,8 @@ body {
   background: linear-gradient(54deg, #3f3570, #8d0062);
   background-size: 400% 400%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+
   -webkit-animation: AnimationName 20s ease infinite;
   -moz-animation: AnimationName 20s ease infinite;
   animation: AnimationName 20s ease infinite;
