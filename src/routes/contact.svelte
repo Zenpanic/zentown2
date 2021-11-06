@@ -98,8 +98,8 @@
         Merci de remplir tous les champs pour pouvoir envoyer votre message.
       </p>{/if}
     {#if messageSent}<p class="infoEmailOk">
-        Votre message nous a bien été envoyés, nous vous répondrons dans les
-        plus brefs délais !
+        Votre message nous a bien été envoyé, nous vous répondrons dans les plus
+        brefs délais !
       </p>{/if}
   </div>
 </div>
