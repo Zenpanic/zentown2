@@ -16,7 +16,7 @@ body {
   padding: 0 50px 1em 150px;
   background: linear-gradient(54deg, #3f3570, #8d0062);
   background-size: 400% 400%;
-
+  background-attachment: fixed;
   -webkit-animation: AnimationName 20s ease infinite;
   -moz-animation: AnimationName 20s ease infinite;
   animation: AnimationName 20s ease infinite;
