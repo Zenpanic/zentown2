@@ -10,10 +10,50 @@
 
 html,
 body {
-  background-color: #393e46;
+  /* background-color: #393e46; */
   font-family: fira_sans, sans-serif;
   margin: 0 auto;
   padding: 0 50px 1em 150px;
+  background: linear-gradient(54deg, #3f3570, #8d0062);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 61%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 61%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 61%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
 }
 
 h1,
@@ -30,7 +70,8 @@ h1 {
   box-sizing: border-box;
 }
 
-p, li {
+p,
+li {
   color: #eeeeee;
   line-height: 1.6em;
   font-size: 1.1em;

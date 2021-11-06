@@ -49,7 +49,7 @@
 <hr />
 
 <section class="presentationSubcontainer" id="part2">
-  <img src={robot} class="homePicture" alt="Robot" loading="lazy"/>
+  <img src={robot} class="homePicture" alt="Robot" loading="lazy" />
   <div class="presentationTextContainer">
     <p class="presentation alignRight">
       ZenTown existe pour vous offrir les solutions les plus adaptées à vos
@@ -91,8 +91,10 @@
   }
 
   .mainSubtitle {
+    margin: 0.5em;
     font-size: xx-large;
     color: #3acddd;
+    text-shadow: 0 0 15px white;
   }
 
   .slogan {
