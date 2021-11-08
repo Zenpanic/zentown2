@@ -27,9 +27,8 @@
   <h3 class="legal-sub-title">Hébergement</h3>
 
   <p>
-    L'hébergeur du site www.zentown.dev est la Société Heroku Inc., dont le
-    siège social est situé au 650 7th Street, San Francisco, CA, USA , avec le
-    numéro de téléphone : +33 1 (877) 563-4311.
+    L'hébergeur du site www.zentown.dev est la société Netlify, dont le siège
+    social est situé au 2325 3rd St #215, San Francisco, Californie, USA.
   </p>
 
   <h3 class="legal-sub-title">Accès au site</h3>
