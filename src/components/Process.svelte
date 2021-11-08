@@ -1,11 +1,3 @@
-<script>
-  const firstContact = "/images/process/first_contact.png";
-  const projectValidation = "/images/process/project_validation.png";
-  const prototype = "/images/process/prototype.png";
-  const deployment = "/images/process/deployment.png";
-  const maintenance = "/images/process/maintenance.png";
-</script>
-
 <section class="processContainer">
   <article class="processSubcontainer">
     <div class="processSectionContainer">
@@ -22,10 +14,12 @@
       </p>
     </div>
     <img
-      src={firstContact}
+      src="/images/process/first_contact.png"
       alt="First contact"
       class="processPicture"
       loading="lazy"
+      width="160"
+      height="111"
     />
   </article>
 
@@ -40,10 +34,12 @@
       </p>
     </div>
     <img
-      src={projectValidation}
+      src="/images/process/project_validation.png"
       alt="Project validation"
       class="processPicture"
       loading="lazy"
+      width="169"
+      height="139"
     />
   </article>
 
@@ -59,10 +55,12 @@
       </p>
     </div>
     <img
-      src={prototype}
+      src="/images/process/prototype.png"
       alt="Prototype"
       class="processPicture"
       loading="lazy"
+      width="200"
+      height="77"
     />
   </article>
 
@@ -80,10 +78,12 @@
       </p>
     </div>
     <img
-      src={deployment}
+      src="/images/process/deployment.png"
       alt="Déploiement"
       class="processPicture"
       loading="lazy"
+      width="168"
+      height="118"
     />
   </article>
 
@@ -98,10 +98,12 @@
       </p>
     </div>
     <img
-      src={maintenance}
+      src="/images/process/maintenance.png"
       alt="Déploiement"
       class="processPicture"
       loading="lazy"
+      width="156"
+      height="142"
     />
   </article>
 </section>

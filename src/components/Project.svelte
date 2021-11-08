@@ -5,7 +5,14 @@
 <div class="projectContainer">
   <h3 class="title">{item.name}</h3>
   <a href={item.live} target="_blank" rel="noopener">
-    <img class="picture" src={item.image} alt={item.name} loading="lazy" /></a
+    <img
+      class="picture"
+      src={item.image}
+      alt={item.name}
+      loading="lazy"
+      width="700"
+      height="397"
+    /></a
   >
   <p class="description">{item.description}</p>
 
@@ -55,7 +62,7 @@
 
   .picture {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
   }
 
   .picture:hover {
@@ -70,6 +77,12 @@
   @media screen and (max-width: 1000px) {
     .projectContainer {
       max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .projectContainer {
+      margin: 1.5em 0.5em;
     }
   }
 </style>

@@ -1,8 +1,6 @@
 <script>
   import validator from "validator";
 
-  const src = "/images/webdev.png";
-
   let name = "";
   let contact = "";
   let message = "";
@@ -30,7 +28,6 @@
       }),
     });
     const data = await res.json();
-    console.log(data);
     if (data.message) loading = false;
     if (data.message === "ok") messageSent = true;
     message = "";
@@ -45,7 +42,14 @@
 </h2>
 
 <div class="contactContainer">
-  <img {src} alt="web dev" class="illustration" loading="lazy" />
+  <img
+    src="/images/webdev.png"
+    alt="web dev"
+    class="illustration"
+    loading="lazy"
+    width="300"
+    height="298"
+  />
 
   <div class="contactElement">
     <label class="formLabel" for="email">E-mail</label>

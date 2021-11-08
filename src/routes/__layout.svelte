@@ -1,15 +1,14 @@
-<script>
-  const github = "/images/github.png";
-  const linkedin = "/images/linkedin.png";
-  const logoNav = "/images/logo_transparent_nav.png";
-</script>
-
 <nav>
   <a href="/" class="logoWrapper"
-    ><img class="logoNav" src={logoNav} alt="ZenTown" /></a
+    ><img
+      class="logoNav"
+      src="/images/logo_transparent_nav.png"
+      width="300"
+      height="300"
+      alt="ZenTown"
+    /></a
   >
   <a class="navlink" href="/">Home</a>
-  <!-- <a class="navlink" href="/services">Services</a> -->
   <a class="navlink" href="/portfolio">Portfolio</a>
   <a class="navlink" href="/contact">Contact</a>
 </nav>
@@ -26,7 +25,13 @@
       target="_blank"
       rel="noopener"
     >
-      <img src={github} alt="github" loading="lazy" />
+      <img
+        src="/images/github.png"
+        alt="github"
+        loading="lazy"
+        width="50"
+        height="50"
+      />
     </a>
     <a
       class="outerLink"
@@ -34,7 +39,13 @@
       target="_blank"
       rel="noopener"
     >
-      <img src={linkedin} alt="linkedin" loading="lazy" />
+      <img
+        src="/images/linkedin.png"
+        alt="linkedin"
+        loading="lazy"
+        width="50"
+        height="50"
+      />
     </a>
   </div>
 

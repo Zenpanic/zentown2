@@ -1,15 +1,18 @@
 <script>
   import Techs from "/src/components/Techs.svelte";
   import Process from "/src/components/Process.svelte";
-
-  const presence = "/images/image1.png";
-  const robot = "/images/image2.png";
-  const logo = "/images/logo_transparent.png";
 </script>
 
 <header class="headerContainer">
   <div class="mainHeader">
-    <img src={logo} alt="ZenTown" class="logo" loading="eager" />
+    <img
+      src="/images/logo_transparent.png"
+      alt="ZenTown"
+      class="logo"
+      loading="lazy"
+      width="400"
+      height="400"
+    />
     <h1 class="mainSubtitle">Développement Web</h1>
   </div>
   <h2 class="slogan">Make your web dreams come true!</h2>
@@ -41,7 +44,14 @@
       sur-mesure !
     </p>
   </div>
-  <img src={presence} class="homePicture" alt="Presence" loading="lazy" />
+  <img
+    src="/images/image1.png"
+    class="homePicture"
+    alt="Presence"
+    loading="lazy"
+    width="445"
+    height="297"
+  />
 </section>
 
 <h2 class="presentationTitle" id="titleRight">La qualité professionnelle</h2>
@@ -49,7 +59,14 @@
 <hr />
 
 <section class="presentationSubcontainer" id="part2">
-  <img src={robot} class="homePicture" alt="Robot" loading="lazy" />
+  <img
+    src="/images/image2.png"
+    class="homePicture"
+    alt="Robot"
+    loading="lazy"
+    width="445"
+    height="297"
+  />
   <div class="presentationTextContainer">
     <p class="presentation alignRight">
       ZenTown existe pour vous offrir les solutions les plus adaptées à vos
