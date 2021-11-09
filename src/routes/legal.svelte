@@ -58,11 +58,7 @@
   </p>
   <h3 class="legal-sub-title">Cookies</h3>
 
-  <p>
-    Le site www.zentown.dev utilise des cookies activés uniquement sur
-    consentement de l'utilisateur. Ces cookies ont un usage purement statistique
-    et ne permettent pas d'identifier un utilisateur.
-  </p>
+  <p>Le site www.zentown.dev n'utilise aucun cookie.</p>
 
   <!-- <p>L’utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de navigation. En naviguant sur le site, il les accepte.
 <br />Un cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site Internet.
