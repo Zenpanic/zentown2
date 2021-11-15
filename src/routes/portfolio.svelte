@@ -5,7 +5,7 @@
       name: "ZenTown",
       image: "/images/portfolio/zentown.png",
       description:
-        "Le site sur lequel vous naviguez actuellement. La version originale était développée avec React, la présente version est réalisée avec Svelte.",
+        "Le site sur lequel vous naviguez actuellement. La version originale était développée avec React, la présente version est réalisée avec Svelte, avec un serverless backend.",
       live: "https://zentown.dev",
       source: "https://github.com/Zenpanic/zentown2",
     },
@@ -13,9 +13,9 @@
       name: "Way of Speaking",
       image: "/images/portfolio/wayofspeaking.png",
       description:
-        "Une page vitrine pour une professeure d'anglais en ligne. Le front-end est fait en HTML5 et CSS3, le back-end utilise Node et Express.",
-      live: "https://wayofspeaking.com",
-      source: "https://github.com/Zenpanic/wayofspeaking",
+        "Une page vitrine pour une professeure d'anglais en ligne. Développé avec Svelte, avec un serverless backend.",
+      live: "https://wayofspeaking.netlify.app/",
+      source: "https://github.com/Zenpanic/wayofspeaking-svelte",
     },
     {
       name: "Oeil",
