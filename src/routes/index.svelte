@@ -9,7 +9,6 @@
       src="/images/logo_transparent.png"
       alt="ZenTown"
       class="logo"
-      loading="lazy"
       width="400"
       height="400"
     />

@@ -1,11 +1,13 @@
 @font-face {
   font-family: "fira_sans";
   src: local("fira_sans"), url(/fonts/FiraSansCondensed-Regular.woff);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "dogicapixel";
   src: local("dogicapixel"), url(/fonts/dogicapixel.otf);
+  font-display: swap;
 }
 
 html,
