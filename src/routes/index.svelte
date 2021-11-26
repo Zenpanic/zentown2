@@ -11,7 +11,7 @@
       class="logo"
       width="400"
       height="400"
-    />
+      loading="eager"    />
     <h1 class="mainSubtitle">Développement Web</h1>
   </div>
   <h2 class="slogan">Make your web dreams come true!</h2>

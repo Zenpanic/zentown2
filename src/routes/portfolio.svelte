@@ -43,6 +43,14 @@
       source: "https://github.com/Zenpanic/zen-weather",
     },
     {
+      name: "Zen Cosmos",
+      image: "/images/portfolio/zencosmos.png",
+      description:
+        "Un projet frontend ayant pour but d'informer sur les astéroïdes paasant à proximité de la Terre pour n'importe quelle date donnée. Développé avec Svelte, utilise l'API NEO de la NASA.",
+      live: "https://zen-cosmos.netlify.app/",
+      source: "https://github.com/Zenpanic/Zen-Cosmos",
+    },
+    {
       name: "easYacht",
       image: "/images/portfolio/easyacht.png",
       description:
@@ -54,7 +62,7 @@
       image: "/images/portfolio/promomusique.png",
       description:
         "Artiste Promomusique permet aux utilisateurs de la plate-forme Promomusique d'accéder au suivi de leurs campagnes promotionnelles grâce à des outils de visualisation statistiques reliés aux API de Youtube, Spotify et Instragram. Les artiste ont aussi accès à de nombreux services personnalisés, tels que la création de fan page ou de boutique en ligne. Développé avec Next.js, Node, MongoDB et Strapi.",
-      live: "https://artiste-promomusique.vercel.app/"
+      live: "https://promo-music.co"
     },
   ].reverse();
 </script>
