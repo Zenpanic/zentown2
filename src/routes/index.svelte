@@ -12,9 +12,12 @@
       width="400"
       height="400"
       loading="eager"    />
-    <h1 class="mainSubtitle">Développement Web</h1>
+      <div class="subHeader">
+        <h1 class="mainSubtitle">Développement Web</h1>
+        <h2 class="slogan">Make your web dreams come true!</h2>
+      </div>
   </div>
-  <h2 class="slogan">Make your web dreams come true!</h2>
+ 
 </header>
 
 <h2 class="presentationTitle">ZenTown: construire une présence en ligne</h2>
@@ -85,11 +88,11 @@
   </div>
 </section>
 
-<h2 class="presentationTitle">Comment ça fonctionne ?</h2>
+<!-- <h2 class="presentationTitle">Comment ça fonctionne ?</h2>
 
 <hr />
 
-<Process />
+<Process /> -->
 
 <Techs />
 

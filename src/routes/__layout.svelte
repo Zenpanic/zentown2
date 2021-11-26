@@ -53,7 +53,7 @@
 
   <div class="legal">
     <a class="legalElement" href="/legal">Mentions Légales</a>
-    <a class="legalElement" href="/terms">CGV/CGU</a>
+    <!-- <a class="legalElement" href="/terms">CGV/CGU</a> -->
   </div>
 </footer>
 
@@ -98,7 +98,7 @@
 
   footer {
     margin-top: 5em;
-    margin-bottom: 2em;
+    margin-bottom: 0em;
   }
 
   .separator {
