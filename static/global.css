@@ -13,17 +13,25 @@
 html,
 body {
   /* background-color: #393e46; */
-  font-family: fira_sans, sans-serif;
-  margin: 0 auto;
-  padding: 0 50px 1em 150px;
-  background: linear-gradient(54deg, #3f3570, #8d0062);
+  /* font-family: fira_sans, sans-serif; */
+  margin: 0;
+  padding: 0;
+  background-color: #dddddd;
+
+  /* background: linear-gradient(54deg, #3f3570, #8d0062);
   background-size: 400% 400%;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
   -webkit-animation: AnimationName 20s ease infinite;
   -moz-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite; */
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
 }
 
 @-webkit-keyframes AnimationName {
@@ -62,7 +70,7 @@ body {
 
 h1,
 h2 {
-  color: #eeeeee;
+  color: #111111;
 }
 
 h1 {
@@ -76,13 +84,12 @@ h1 {
 
 p,
 li {
-  color: #eeeeee;
+  color: #111111;
   line-height: 1.6em;
   font-size: 1.1em;
 }
 
 @media screen and (max-width: 1000px) {
-  html,
   body {
     padding: 2em 0.5em 1em 0.5em;
   }
