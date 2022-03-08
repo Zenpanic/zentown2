@@ -5,24 +5,24 @@
 <!-- <Menu /> -->
 
 <!-- <noscript> -->
-  <nav>
-    <a href="/" class="logoWrapper"
-      ><img
-        class="logoNav"
-        src="/images/logo_transparent_nav.png"
-        width="300"
-        height="300"
-        alt="ZenTown"
-      /></a
-    >
-    <a class="navlink" href="/">Home</a>
-    <a class="navlink" href="/portfolio">Portfolio</a>
-    <a class="navlink" href="/contact">Contact</a>
-  </nav>
+<nav>
+  <a href="/" class="logoWrapper"
+    ><img
+      class="logoNav"
+      src="/images/logo_transparent_nav.png"
+      width="300"
+      height="300"
+      alt="ZenTown"
+    /></a
+  >
+  <a class="navlink" href="/">Home</a>
+  <a class="navlink" href="/portfolio">Portfolio</a>
+  <a class="navlink" href="/contact">Contact</a>
+</nav>
 
-  <div class="separator" />
+<div class="separator" />
 
-  <style>
+<!-- <style>
     @media screen and (min-width: 1001px) {
       body {
         margin-left: 200px;
@@ -35,7 +35,7 @@
         margin: 0 auto;
       }
     }
-  </style>
+  </style> -->
 <!-- </noscript> -->
 
 <slot />
@@ -167,6 +167,19 @@
 
     .logoWrapper {
       display: none;
+    }
+  }
+
+  @media screen and (min-width: 1001px) {
+    body {
+      margin-left: 200px;
+    }
+  }
+  @media screen and (min-width: 1599px) {
+    body {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
     }
   }
 </style>
