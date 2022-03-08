@@ -2,9 +2,9 @@
   import Menu from "../components/Menu.svelte";
 </script>
 
-<Menu />
+<!-- <Menu /> -->
 
-<noscript>
+<!-- <noscript> -->
   <nav>
     <a href="/" class="logoWrapper"
       ><img
@@ -36,7 +36,7 @@
       }
     }
   </style>
-</noscript>
+<!-- </noscript> -->
 
 <slot />
 
