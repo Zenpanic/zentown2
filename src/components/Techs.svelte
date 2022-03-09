@@ -20,45 +20,21 @@
   ];
 </script>
 
-<h2 class="techsText">Notre tech stack</h2>
-
-<div class="techContainer">
-  {#each techStack as tech (tech.name)}
-    <img
-      src={tech.src}
-      alt={tech.name}
-      class="techImage"
-      loading="lazy"
-      width="150"
-      height="150"
-    />
-  {/each}
-</div>
+<section class="content block box mt-6">
+  <div class="techContainer">
+    {#each techStack as tech (tech.name)}
+      <figure class="image is-96x96">
+        <img src={tech.src} alt={tech.name} />
+      </figure>
+    {/each}
+  </div>
+</section>
 
 <style>
-  .techsText {
-    text-transform: uppercase;
-    text-align: center;
-    width: 50%;
-    margin: 2em auto 0.5em auto;
-    padding: 0.5em 0 1em 0;
-    color: #f35f5f;
-    font-size: xx-large;
-    font-weight: 600;
-    letter-spacing: 0.3em;
-  }
-
   .techContainer {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0.5em auto;
     justify-content: center;
     align-items: center;
-  }
-
-  .techImage {
-    margin: 0.5em;
-    width: 100px;
-    height: 100px;
+    flex-wrap: wrap;
   }
 </style>

@@ -1,36 +1,54 @@
-<!-- <noscript> -->
-<nav>
-  <a href="/" class="logoWrapper"
-    ><img
-      class="logoNav"
-      src="/images/logo_transparent_nav.png"
-      width="300"
-      height="300"
-      alt="ZenTown"
-    /></a
+<script>
+  import "bulma/css/bulma.css";
+
+  let burgerOpened = false;
+
+  const toggleBurger = () => {
+    burgerOpened = !burgerOpened;
+  };
+</script>
+
+<nav
+  class="navbar is-fixed-top is-transparent"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="navbar-brand">
+    <a
+      class="navbar-item"
+      href="/"
+      style={"color: #f35f5f; font-weight: 600; font-size: larger"}
+      >ZenTown
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      on:click={toggleBurger}
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true" />
+      <span aria-hidden="true" />
+      <span aria-hidden="true" />
+    </a>
+  </div>
+
+  <div
+    id="navbarBasicExample"
+    class="navbar-menu"
+    class:is-active={burgerOpened}
   >
-  <a class="navlink" href="/">Home</a>
-  <a class="navlink" href="/portfolio">Portfolio</a>
-  <a class="navlink" href="/contact">Contact</a>
+    <div class="navbar-start">
+      <a class="navbar-item" href="/"> Home </a>
+
+      <a class="navbar-item" href="/portfolio"> Portfolio </a>
+
+      <a class="navbar-item" href="/contact"> Contact </a>
+    </div>
+  </div>
 </nav>
-
-<div class="separator" />
-
-<!-- <style>
-    @media screen and (min-width: 1001px) {
-      body {
-        margin-left: 200px;
-      }
-    }
-    @media screen and (min-width: 1599px) {
-      body {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0 auto;
-      }
-    }
-  </style> -->
-<!-- </noscript> -->
 
 <slot />
 
@@ -75,44 +93,6 @@
 </footer>
 
 <style>
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 200px;
-    height: 100vh;
-    opacity: 85%;
-  }
-
-  .logoWrapper {
-    margin-bottom: 3em;
-  }
-
-  .logoNav {
-    width: 150px;
-    height: 150px;
-  }
-
-  .navlink,
-  .navlink:visited {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0.5em;
-  }
-
-  .navlink:hover,
-  .legalElement:hover {
-    color: #ff1154;
-    font-weight: 600;
-  }
-
   footer {
     margin-top: 5em;
     margin-bottom: 0em;
@@ -145,22 +125,5 @@
     cursor: pointer;
     text-decoration: none;
     color: #eeeeee;
-  }
-
-  @media screen and (max-width: 1000px) {
-    nav {
-      flex-direction: row;
-      height: 50px;
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    .navlink {
-      margin: 0.5em;
-    }
-
-    .logoWrapper {
-      display: none;
-    }
   }
 </style>
