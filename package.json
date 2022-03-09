@@ -4,21 +4,11 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
-    "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
-    "smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
-    "smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
+    "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@smui/button": "^6.0.0-beta.15",
-    "@smui/common": "^6.0.0-beta.15",
-    "@smui/drawer": "^6.0.0-beta.15",
-    "@smui/icon-button": "^6.0.0-beta.15",
-    "@smui/list": "^6.0.0-beta.15",
-    "@smui/paper": "^6.0.0-beta.15",
     "@sveltejs/adapter-netlify": "^1.0.0-next.35",
     "@sveltejs/kit": "next",
-    "smui-theme": "^6.0.0-beta.15",
     "stream": "^0.0.2",
     "svelte": "^3.42.6"
   },

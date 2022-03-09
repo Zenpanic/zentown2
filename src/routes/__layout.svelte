@@ -1,9 +1,3 @@
-<script>
-  import Menu from "../components/Menu.svelte";
-</script>
-
-<!-- <Menu /> -->
-
 <!-- <noscript> -->
 <nav>
   <a href="/" class="logoWrapper"
@@ -167,19 +161,6 @@
 
     .logoWrapper {
       display: none;
-    }
-  }
-
-  @media screen and (min-width: 1001px) {
-    body {
-      margin-left: 200px;
-    }
-  }
-  @media screen and (min-width: 1599px) {
-    body {
-      display: flex;
-      justify-content: space-evenly;
-      margin: 0 auto;
     }
   }
 </style>

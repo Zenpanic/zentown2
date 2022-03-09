@@ -1,7 +1,5 @@
 <script>
   import Techs from "/src/components/Techs.svelte";
-  import Process from "/src/components/Process.svelte";
-  import Paper, { Title, Subtitle, Content } from "@smui/paper";
 </script>
 
 <header class="headerContainer">
@@ -21,75 +19,73 @@
   </div>
 </header>
 
-<Paper elevation={3}>
-  <h2 class="presentationTitle">ZenTown: construire une présence en ligne</h2>
+<h2 class="presentationTitle">ZenTown: construire une présence en ligne</h2>
 
-  <hr />
+<hr />
 
-  <section class="presentationSubcontainer" id="part1">
-    <Content>
-      <p class="presentation">
-        Qu'ont en commun les PME, les start-ups, les indépendants, les artistes,
-        les associations et les créateurs de contenu ? Tous ont à gagner à avoir
-        une visibilité sur le web, car un site est bien plus qu'un catalogue,
-        livre ou portfolio dématérialisé. C'est un espace ouvert à toute heure,
-        à tout moment de l'année, où sont accessibles vos créations, produits,
-        idées, services et valeurs. C'est un lieu de recontre et d'échange pour
-        partager information et connaissance. Et par-dessus tout, c'est une
-        chose changeante et vivante, accessible par tous, partout sur Terre.
-      </p>
+<section class="presentationSubcontainer" id="part1">
+  <div>
+    <p class="presentation">
+      Qu'ont en commun les PME, les start-ups, les indépendants, les artistes,
+      les associations et les créateurs de contenu ? Tous ont à gagner à avoir
+      une visibilité sur le web, car un site est bien plus qu'un catalogue,
+      livre ou portfolio dématérialisé. C'est un espace ouvert à toute heure, à
+      tout moment de l'année, où sont accessibles vos créations, produits,
+      idées, services et valeurs. C'est un lieu de recontre et d'échange pour
+      partager information et connaissance. Et par-dessus tout, c'est une chose
+      changeante et vivante, accessible par tous, partout sur Terre.
+    </p>
 
-      <p class="presentation">
-        Quoi de mieux pour mettre en avant votre identité qu'un site ou une
-        application web développé sur mesure selon vos attentes et vos envies ?
-        Ne laissez plus tomber la créativité, les pages de réseaux sociaux où
-        tout est identique et rien ne vous ressemble, ce n'est pas l'idéal pour
-        vous mettre en avant, ni proposer des contenus et services pensés
-        spécialement pour vos visiteurs avec un confort absolu.
-      </p>
-    </Content>
-    <img
-      src="/images/image1.png"
-      class="homePicture"
-      alt="Presence"
-      loading="lazy"
-      width="445"
-      height="297"
-    />
-  </section>
+    <p class="presentation">
+      Quoi de mieux pour mettre en avant votre identité qu'un site ou une
+      application web développé sur mesure selon vos attentes et vos envies ? Ne
+      laissez plus tomber la créativité, les pages de réseaux sociaux où tout
+      est identique et rien ne vous ressemble, ce n'est pas l'idéal pour vous
+      mettre en avant, ni proposer des contenus et services pensés spécialement
+      pour vos visiteurs avec un confort absolu.
+    </p>
+  </div>
+  <img
+    src="/images/image1.png"
+    class="homePicture"
+    alt="Presence"
+    loading="lazy"
+    width="445"
+    height="297"
+  />
+</section>
 
-  <h2 class="presentationTitle" id="titleRight">La qualité professionnelle</h2>
+<h2 class="presentationTitle" id="titleRight">La qualité professionnelle</h2>
 
-  <hr />
+<hr />
 
-  <section class="presentationSubcontainer" id="part2">
-    <img
-      src="/images/image2.png"
-      class="homePicture"
-      alt="Robot"
-      loading="lazy"
-      width="445"
-      height="297"
-    />
-    <Content>
-      <p class="presentation alignRight">
-        ZenTown existe pour vous offrir les solutions les plus adaptées à vos
-        besoins. De l'établissement de la bonne charte graphique pour vos pages,
-        jusqu'au déploiement sur les serveurs, nous nous occupons de tout pour
-        vous offrir un produit à la fois esthétique et efficace, dont vous
-        pourrez être fier.
-      </p>
+<section class="presentationSubcontainer" id="part2">
+  <img
+    src="/images/image2.png"
+    class="homePicture"
+    alt="Robot"
+    loading="lazy"
+    width="445"
+    height="297"
+  />
+  <div>
+    <p class="presentation alignRight">
+      ZenTown existe pour vous offrir les solutions les plus adaptées à vos
+      besoins. De l'établissement de la bonne charte graphique pour vos pages,
+      jusqu'au déploiement sur les serveurs, nous nous occupons de tout pour
+      vous offrir un produit à la fois esthétique et efficace, dont vous pourrez
+      être fier.
+    </p>
 
-      <p class="presentation alignRight">
-        Nos sites et applications web sont légers et rapides, pour fournir à vos
-        utilisateurs la meilleure expérience possible. Il est essentiel pour
-        nous de faire de votre projet une réussite, autant en termes de respect
-        de votre vision, que de précision technique inhérente aux technologies
-        du web.
-      </p>
-    </Content>
-  </section>
-</Paper>
+    <p class="presentation alignRight">
+      Nos sites et applications web sont légers et rapides, pour fournir à vos
+      utilisateurs la meilleure expérience possible. Il est essentiel pour nous
+      de faire de votre projet une réussite, autant en termes de respect de
+      votre vision, que de précision technique inhérente aux technologies du
+      web.
+    </p>
+  </div>
+</section>
 
 <!-- <h2 class="presentationTitle">Comment ça fonctionne ?</h2>
 
@@ -163,10 +159,6 @@
 
   #titleRight {
     text-align: right;
-  }
-
-  .my-paper {
-    margin-top: 200px;
   }
 
   @media screen and (max-width: 1279px) {
