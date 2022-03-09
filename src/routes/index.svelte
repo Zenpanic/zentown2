@@ -11,14 +11,13 @@
 <main class="container">
   <section class="mt-6 pr-1 pl-1">
     <div class="flexCont">
-      <div class="content">
+      <div class="content paragraphe">
         <h2 class="title">Construire une présence en ligne</h2>
         <p>
-          Développeur web depuis 2020, je vous accompagne dans vos projets de la
-          conception au déploiement, quelle que soit leur complexité. Site
-          vitrine ou application web complexe, projet artistique ou plate-forme
-          ecommerce, professionnel ou particulier, n'attendez plus pour vous
-          lancer !
+          Développeur web depuis 2020, je vous accompagne dans vos projets des
+          plus simples aux plus complexes. Site vitrine ou application web
+          avancée, projet artistique ou plate-forme ecommerce, professionnel ou
+          particulier, n'attendez plus pour vous lancer !
         </p>
       </div>
 
@@ -43,7 +42,7 @@
         height="297"
         class="illustration"
       />
-      <div class="content has-text-right-tablet">
+      <div class="content has-text-right-tablet paragraphe">
         <h2 class="title">La qualité professionnelle</h2>
         <p>
           ZenTown existe pour vous offrir les solutions les plus adaptées à vos
@@ -72,5 +71,9 @@
   .illustration {
     max-width: 100%;
     max-height: 100%;
+  }
+
+  .paragraphe {
+    min-width: 312px;
   }
 </style>

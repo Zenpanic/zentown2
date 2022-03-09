@@ -70,7 +70,7 @@
 <section class="hero is-primary block">
   <div class="hero-body">
     <p class="title">Portfolio</p>
-    <p class="subtitle">Frontend & Backend</p>
+    <p class="subtitle">Ça pourrait être nous, ici...</p>
   </div>
 </section>
 

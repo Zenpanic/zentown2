@@ -4,17 +4,21 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "preview": "svelte-kit preview"
+    "preview": "svelte-kit preview",
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss static/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "devDependencies": {
     "@sveltejs/adapter-netlify": "^1.0.0-next.35",
     "@sveltejs/kit": "next",
+    "bulma": "^0.9.3",
+    "node-sass": "^7.0.1",
     "stream": "^0.0.2",
     "svelte": "^3.42.6"
   },
   "type": "module",
   "dependencies": {
-    "bulma": "^0.9.3",
     "dotenv": "^10.0.0",
     "nodemailer": "^6.7.0",
     "svelte-awesome": "^2.4.4",

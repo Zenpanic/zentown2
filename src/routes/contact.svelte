@@ -47,7 +47,7 @@
     </p>
   </div>
 </section>
-<main class="container pr-1 pl-1">
+<main class="container pr-1 pl-1 mt-6">
   <div class="form formContainer">
     <div class="field">
       <label class="label" for="email">Email</label>

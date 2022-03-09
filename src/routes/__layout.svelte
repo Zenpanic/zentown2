@@ -1,5 +1,5 @@
 <script>
-  import "bulma/css/bulma.css";
+  /*   import "bulma/css/bulma.css"; */
 
   let burgerOpened = false;
 
