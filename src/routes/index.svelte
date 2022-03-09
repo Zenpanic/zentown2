@@ -2,14 +2,13 @@
   import Techs from "/src/components/Techs.svelte";
 </script>
 
+<section class="hero is-primary block">
+  <div class="hero-body">
+    <p class="title">ZenTown</p>
+    <p class="subtitle">Développement Web</p>
+  </div>
+</section>
 <main class="container">
-  <section class="hero is-primary block">
-    <div class="hero-body">
-      <p class="title">ZenTown</p>
-      <p class="subtitle">Développement Web</p>
-    </div>
-  </section>
-
   <section class="mt-6 pr-1 pl-1">
     <div class="flexCont">
       <div class="content">

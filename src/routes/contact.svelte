@@ -1,5 +1,7 @@
 <script>
   import validator from "validator";
+  import Icon from "svelte-awesome";
+  import envelope from "svelte-awesome/icons/envelope";
 
   let name = "";
   let contact = "";
@@ -36,104 +38,114 @@
   };
 </script>
 
-<h2 class="pageTitle">
-  Contactez-nous pour toute question concernant votre projet, nous sommes là
-  pour le concrétiser !
-</h2>
+<section class="hero is-primary block">
+  <div class="hero-body">
+    <p class="title">Contact</p>
+    <p class="subtitle">
+      Vous avez une question ? Vous souhaitez un devis ? Vous voulez m'engager ?
+      (vous avez bon goût !)
+    </p>
+  </div>
+</section>
+<main class="container pr-1 pl-1">
+  <div class="form formContainer">
+    <div class="field">
+      <label class="label" for="email">Email</label>
+      <div class="control has-icons-left">
+        <input
+          class="input"
+          type="email"
+          placeholder="Email"
+          bind:value={contact}
+          autocomplete="off"
+          name="email"
+          id="email"
+        />
+        <span class="icon is-small is-left">
+          <Icon data={envelope} />
+        </span>
+      </div>
+      {#if wrongEmail}<p class="infoEmail">
+          Merci d'entrer une adresse e-mail valide.
+        </p>{/if}
+      {#if goodEmail}<p class="infoEmailOk">OK</p>{/if}
+    </div>
 
-<div class="contactContainer">
-  <img
-    src="/images/webdev.png"
-    alt="web dev"
-    class="illustration"
-    loading="lazy"
-    width="300"
-    height="298"
-  />
+    <div class="field">
+      <label class="label" for="message">Message</label>
+      <div class="control">
+        <textarea
+          class="textarea"
+          id="message"
+          name="message"
+          placeholder="Votre message"
+          bind:value={message}
+          rows="8"
+        />
+      </div>
+      {#if wrongMessage}
+        <p class="infoEmail">
+          Votre message doit comporter au moins 10 caractères.
+        </p>
+      {/if}
+      {#if goodMessage}
+        <p class="infoEmailOk">OK</p>
+      {/if}
+    </div>
 
-  <div class="contactElement">
-    <label class="formLabel" for="email">E-mail</label>
-    <input
-      class="formInput"
-      bind:value={contact}
-      autocomplete="off"
-      placeholder="E-mail"
-      name="email"
-      id="email"
-    />
-    {#if wrongEmail}<p class="infoEmail">
-        Merci d'entrer une adresse e-mail valide.
-      </p>{/if}
-    {#if goodEmail}<p class="infoEmailOk">OK</p>{/if}
-  </div>
-  <div class="contactElement">
-    <label class="formLabel" for="message">Message</label>
-    <textarea
-      class="formInput formArea"
-      bind:value={message}
-      autocomplete="off"
-      placeholder="Votre message..."
-      name="message"
-      id="message"
-    />
-    {#if wrongMessage}<p class="infoEmail">
-        Votre message doit comporter au moins 10 caractères.
-      </p>{/if}
-    {#if goodMessage}<p class="infoEmailOk">OK</p>{/if}
-  </div>
-  <div class="contactName">
-    <label class="formLabel" for="name">Name</label>
-    <input
-      class="formInput"
-      bind:value={name}
-      autocomplete="off"
-      placeholder="Name"
-      name="name"
-      id="name"
+    <div class="contactName">
+      <label class="formLabel" for="name">Name</label>
+      <input
+        class="formInput"
+        bind:value={name}
+        autocomplete="off"
+        placeholder="Name"
+        name="name"
+        id="name"
+      />
+    </div>
+
+    <div class="control field">
+      <button
+        class="button is-link"
+        on:click={sendEmail}
+        disabled={loading || !validated}>Envoyer</button
+      >
+      {#if !validated && !messageSent}<p class="infoEmail">
+          Merci de remplir tous les champs pour pouvoir envoyer votre message.
+        </p>{/if}
+      {#if messageSent}<p class="infoEmailOk">
+          Votre message nous a bien été envoyé, nous vous répondrons dans les
+          plus brefs délais !
+        </p>{/if}
+    </div>
+
+    <img
+      src="/images/webdev.png"
+      alt="web dev"
+      class="illustration has-text-centered mt-6"
+      loading="lazy"
+      width="300"
+      height="298"
     />
   </div>
-  <div class="contactElement">
-    <button
-      on:click={sendEmail}
-      class="contactButton"
-      disabled={loading || !validated}>Envoyer</button
-    >
-    {#if !validated && !messageSent}<p class="infoEmail">
-        Merci de remplir tous les champs pour pouvoir envoyer votre message.
-      </p>{/if}
-    {#if messageSent}<p class="infoEmailOk">
-        Votre message nous a bien été envoyé, nous vous répondrons dans les plus
-        brefs délais !
-      </p>{/if}
-  </div>
-</div>
+</main>
 
 <style>
-  .pageTitle {
-    text-align: center;
-    margin: 2em auto;
+  .formContainer {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .illustration {
-    margin: 0 0.5em 2em 0.5em;
+    margin: 1rem auto;
     max-width: 100%;
     height: auto;
-  }
-
-  .contactContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .contactElement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1em 0;
-    width: 100%;
   }
 
   .contactName {
@@ -151,31 +163,6 @@
     width: 50%;
     min-width: 270px;
     padding: 0.5em;
-  }
-
-  .formArea {
-    min-height: 100px;
-  }
-
-  .contactButton {
-    margin: 0;
-    padding: 0.9em 1.8em;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #ff1154;
-    background-color: black;
-    border: 1px solid white;
-    cursor: pointer;
-  }
-
-  .contactButton:hover {
-    border-color: #ff1154;
-  }
-
-  .contactButton:disabled {
-    color: white;
-    background-color: darkgray;
-    cursor: not-allowed;
   }
 
   .infoEmail {
