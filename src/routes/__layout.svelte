@@ -52,7 +52,52 @@
 
 <slot />
 
-<footer>
+<footer class="footer mt-6">
+  <div class="level">
+    <div class="level-left">
+      <div class="level-item">
+        <a
+          class="outerLink"
+          href="https://github.com/Zenpanic"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="/images/github.png"
+            alt="github"
+            loading="lazy"
+            width="50"
+            height="50"
+          />
+        </a>
+      </div>
+      <div class="level-item">
+        <a
+          class="outerLink"
+          href="https://www.linkedin.com/in/s-belmo"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="/images/linkedin.png"
+            alt="linkedin"
+            loading="lazy"
+            width="50"
+            height="50"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="level-right">
+      <div class="level-item">
+        <a class="link" href="/legal">Mentions Légales</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- <footer class="footer">
   <div class="social">
     <a
       class="outerLink"
@@ -84,19 +129,11 @@
     </a>
   </div>
 
-  <hr class="separator" />
-
-  <div class="legal">
-    <a href="/legal">Mentions Légales</a>
+  <div class="content">
+    <a class="link" href="/legal">Mentions Légales</a>
   </div>
-</footer>
-
+</footer> -->
 <style>
-  footer {
-    margin-top: 5em;
-    margin-bottom: 0em;
-  }
-
   .separator {
     margin: 1em 0 1em 0;
   }

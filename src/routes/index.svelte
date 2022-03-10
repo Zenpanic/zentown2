@@ -14,7 +14,7 @@
         height="128"
       />
     </figure>
-    <div class="ml-4">
+    <div class="ml-4 has-text-right">
       <p class="title">Sébastien Belmo</p>
       <p class="subtitle">Développeur web</p>
     </div>

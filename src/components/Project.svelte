@@ -2,7 +2,27 @@
   export let item;
 </script>
 
-<div class="projectContainer">
+<div class="card project">
+  <div class="card-image">
+    <figure class="image is-16by10">
+      <img src={item.image} alt={item.name} />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-4">{item.name}</p>
+        <a href={item.live} target="_blank" class="link">Voir le projet</a>
+      </div>
+    </div>
+
+    <div class="content">
+      {item.description}
+    </div>
+  </div>
+</div>
+
+<!-- <div class="projectContainer">
   <h3 class="title">{item.name}</h3>
   <a href={item.live} target="_blank" rel="noopener">
     <img
@@ -42,10 +62,14 @@
       >
     {/if}
   </div>
-</div>
-
+</div> -->
 <style>
-  .projectContainer {
+  .project {
+    max-width: 400px;
+    width: 100%;
+    margin: 1rem;
+  }
+  /* .projectContainer {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
@@ -84,5 +108,5 @@
     .projectContainer {
       margin: 1.5em 0.5em;
     }
-  }
+  } */
 </style>

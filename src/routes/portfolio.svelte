@@ -13,7 +13,7 @@
       name: "Way of Speaking",
       image: "/images/portfolio/wayofspeaking.png",
       description:
-        "Une page vitrine pour une professeure d'anglais en ligne. Développé avec Svelte, avec un serverless backend.",
+        "Une page vitrine pour une professeure d'anglais en ligne. Développé avec Svelte Kit, hébergé en serverless sur Netlify.",
       live: "https://wayofspeaking.netlify.app/",
       source: "https://github.com/Zenpanic/wayofspeaking-svelte",
     },
@@ -54,14 +54,14 @@
       name: "easYacht",
       image: "/images/portfolio/easyacht.png",
       description:
-        "L'application web easYacht met en relation les particuliers et les professionnels de l'achat/vente/location nautique. Développé avec Next.js, Node, Express, MongoDB, et Strapi, avec de nombreuses fonctionnalités sur-mesure telles qu'un blog, un forum ou encore un chatbot. Intègre de nombreux services et API tels que Stripe, Paypal, Google et Facebook Login, ou encore World Weather Online API.",
+        "L'application web easYacht met en relation les particuliers et les professionnels de l'achat/vente/location nautique. Développé avec Next.js, Node, Express, MongoDB, et Strapi. Intégrations Stripe, Paypal, Google, Facebook et WWO API.",
       live: "https://www.easyacht.app/",
     },
     {
       name: "Artiste Promomusique",
       image: "/images/portfolio/promomusique.png",
       description:
-        "Artiste Promomusique permet aux utilisateurs de la plate-forme Promomusique d'accéder au suivi de leurs campagnes promotionnelles grâce à des outils de visualisation statistiques reliés aux API de Youtube, Spotify et Instragram. Les artiste ont aussi accès à de nombreux services personnalisés, tels que la création de fan page ou de boutique en ligne. Développé avec Next.js, Node, MongoDB et Strapi.",
+        "Artiste Promomusique offre aux utilisateurs de la plate-forme Promomusique un dashboard analytique et des services tels que la création d'une fanpage ou d'une boutique en ligne. Développé avec Next.js, Node, MongoDB et Strapi. Intégration Stripe, Bitly, Youtube, Spotify, Instagram.",
       live: "https://promo-music.co",
     },
   ].reverse();
@@ -74,18 +74,17 @@
   </div>
 </section>
 
-<main class="projectGlobalContainer">
+<main class="projectContainer">
   {#each projects as project (project.name)}
     <Project item={project} />
   {/each}
 </main>
 
 <style>
-  .projectGlobalContainer {
+  .projectContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    flex-wrap: wrap;
-    margin: 0.5em auto;
   }
 </style>
