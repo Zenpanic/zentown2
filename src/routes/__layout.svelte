@@ -87,8 +87,7 @@
   <hr class="separator" />
 
   <div class="legal">
-    <a class="legalElement" href="/legal">Mentions Légales</a>
-    <!-- <a class="legalElement" href="/terms">CGV/CGU</a> -->
+    <a href="/legal">Mentions Légales</a>
   </div>
 </footer>
 

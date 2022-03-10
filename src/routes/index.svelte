@@ -3,8 +3,10 @@
 </script>
 
 <section class="hero is-primary block">
-  <div class="hero-body is-flex is-align-items-center">
-    <figure class="image is-128x128">
+  <div
+    class="hero-body is-flex is-align-items-center is-justify-content-space-between"
+  >
+    <figure class="image is-128x128 is-hidden-mobile">
       <img
         src="/images/logo_transparent.png"
         alt="logo"
@@ -13,8 +15,8 @@
       />
     </figure>
     <div class="ml-4">
-      <p class="title">ZenTown</p>
-      <p class="subtitle">Développement Web</p>
+      <p class="title">Sébastien Belmo</p>
+      <p class="subtitle">Développeur web</p>
     </div>
   </div>
 </section>
@@ -24,10 +26,10 @@
       <div class="content paragraphe">
         <h2 class="title">Construire une présence en ligne</h2>
         <p>
-          Développeur web depuis 2020, je vous accompagne dans vos projets des
-          plus simples aux plus complexes. Site vitrine ou application web
-          avancée, projet artistique ou plate-forme ecommerce, professionnel ou
-          particulier, n'attendez plus pour vous lancer !
+          Développeur web fullstack depuis 2020, je vous accompagne dans vos
+          projets des plus simples aux plus complexes. Site vitrine ou
+          application web avancée, projet artistique ou plate-forme ecommerce,
+          professionnel ou particulier, n'attendez plus pour vous lancer !
         </p>
       </div>
 
