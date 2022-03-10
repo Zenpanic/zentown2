@@ -54,6 +54,7 @@
       <div class="control has-icons-left">
         <input
           class="input"
+          class:is-success={goodEmail}
           type="email"
           placeholder="Email"
           bind:value={contact}
@@ -65,10 +66,10 @@
           <Icon data={envelope} />
         </span>
       </div>
-      {#if wrongEmail}<p class="infoEmail">
+      {#if wrongEmail}<p class="help is-danger">
           Merci d'entrer une adresse e-mail valide.
         </p>{/if}
-      {#if goodEmail}<p class="infoEmailOk">OK</p>{/if}
+      {#if goodEmail}<p class="help is-success">OK</p>{/if}
     </div>
 
     <div class="field">
@@ -76,6 +77,7 @@
       <div class="control">
         <textarea
           class="textarea"
+          class:is-success={goodMessage}
           id="message"
           name="message"
           placeholder="Votre message"
@@ -84,17 +86,17 @@
         />
       </div>
       {#if wrongMessage}
-        <p class="infoEmail">
+        <p class="help is-danger">
           Votre message doit comporter au moins 10 caractères.
         </p>
       {/if}
       {#if goodMessage}
-        <p class="infoEmailOk">OK</p>
+        <p class="help is-success">OK</p>
       {/if}
     </div>
 
     <div class="contactName">
-      <label class="formLabel" for="name">Name</label>
+      <label class="label" for="name">Name</label>
       <input
         class="formInput"
         bind:value={name}
@@ -105,16 +107,16 @@
       />
     </div>
 
-    <div class="control field">
+    <div class="control field mt-4">
       <button
         class="button is-link"
         on:click={sendEmail}
         disabled={loading || !validated}>Envoyer</button
       >
-      {#if !validated && !messageSent}<p class="infoEmail">
+      {#if !validated && !messageSent}<p class="help is-danger">
           Merci de remplir tous les champs pour pouvoir envoyer votre message.
         </p>{/if}
-      {#if messageSent}<p class="infoEmailOk">
+      {#if messageSent}<p class="help is-success">
           Votre message nous a bien été envoyé, nous vous répondrons dans les
           plus brefs délais !
         </p>{/if}
