@@ -98,7 +98,6 @@
     <div class="contactName">
       <label class="label" for="name">Name</label>
       <input
-        class="formInput"
         bind:value={name}
         autocomplete="off"
         placeholder="Name"
@@ -152,33 +151,5 @@
 
   .contactName {
     display: none;
-  }
-
-  .formLabel {
-    color: #f35f5f;
-    margin-bottom: 0.5em;
-    font-size: large;
-    text-transform: underline;
-  }
-
-  .formInput {
-    width: 50%;
-    min-width: 270px;
-    padding: 0.5em;
-  }
-
-  .infoEmail {
-    font-size: small;
-    color: red;
-    font-weight: 600;
-    margin-bottom: 0;
-  }
-
-  .infoEmailOk {
-    font-size: small;
-    color: #3acddd;
-    font-weight: 600;
-    margin-bottom: 0;
-    text-align: center;
   }
 </style>
