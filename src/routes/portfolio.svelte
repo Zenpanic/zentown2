@@ -5,17 +5,9 @@
       name: "ZenTown",
       image: "/images/portfolio/zentown.png",
       description:
-        "Le site sur lequel vous naviguez actuellement. La version originale était développée avec React, la présente version est réalisée avec Svelte, avec un serverless backend.",
+        "Le site sur lequel vous naviguez actuellement. La version originale était développée avec React, la présente version est réalisée sous Svelte, avec un serverless backend.",
       live: "https://zentown.dev",
       source: "https://github.com/Zenpanic/zentown2",
-    },
-    {
-      name: "Way of Speaking",
-      image: "/images/portfolio/wayofspeaking.png",
-      description:
-        "Une page vitrine pour une professeure d'anglais en ligne. Développé avec Svelte Kit, hébergé en serverless sur Netlify.",
-      live: "https://wayofspeaking.netlify.app/",
-      source: "https://github.com/Zenpanic/wayofspeaking-svelte",
     },
     {
       name: "Oeil",
@@ -26,6 +18,7 @@
       sourceFront: "https://github.com/Zenpanic/oeil-frontend",
       sourceBack: "https://github.com/Zenpanic/oeil-api",
     },
+
     {
       name: "Aquafaba Temple",
       image: "/images/portfolio/aquafaba.png",
@@ -49,6 +42,14 @@
         "Un projet frontend ayant pour but d'informer sur les astéroïdes paasant à proximité de la Terre pour n'importe quelle date donnée. Développé avec Svelte, utilise l'API NEO de la NASA.",
       live: "https://zen-cosmos.netlify.app/",
       source: "https://github.com/Zenpanic/Zen-Cosmos",
+    },
+    {
+      name: "Way of Speaking",
+      image: "/images/portfolio/wayofspeaking.png",
+      description:
+        "Une page vitrine pour une professeure d'anglais en ligne. Développé avec Svelte, hébergé en serverless sur Netlify.",
+      live: "https://wayofspeaking.netlify.app/",
+      source: "https://github.com/Zenpanic/wayofspeaking-svelte",
     },
     {
       name: "easYacht",
