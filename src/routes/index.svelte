@@ -3,9 +3,19 @@
 </script>
 
 <section class="hero is-primary block">
-  <div class="hero-body">
-    <p class="title">ZenTown</p>
-    <p class="subtitle">Développement Web</p>
+  <div class="hero-body is-flex is-align-items-center">
+    <figure class="image is-128x128">
+      <img
+        src="/images/logo_transparent.png"
+        alt="logo"
+        width="128"
+        height="128"
+      />
+    </figure>
+    <div class="ml-4">
+      <p class="title">ZenTown</p>
+      <p class="subtitle">Développement Web</p>
+    </div>
   </div>
 </section>
 <main class="container">
