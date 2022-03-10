@@ -45,7 +45,7 @@
   </section>
 
   <section class="pr-1 pl-1">
-    <div class="flexCont">
+    <div class="flexCont flexReversed">
       <img
         src="/images/image2.png"
         alt="Robot"
@@ -73,7 +73,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
   }
 
   .flexCont > * {
@@ -81,11 +80,24 @@
   }
 
   .illustration {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 445px;
+    width: 100%;
   }
 
   .paragraphe {
     min-width: 312px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .flexCont {
+      flex-direction: column;
+    }
+    .flexReversed {
+      flex-direction: column-reverse;
+      margin-top: 2rem;
+    }
+    .illustration {
+      margin: 1rem;
+    }
   }
 </style>
