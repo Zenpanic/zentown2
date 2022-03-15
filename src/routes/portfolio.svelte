@@ -18,15 +18,6 @@
       sourceFront: "https://github.com/Zenpanic/oeil-frontend",
       sourceBack: "https://github.com/Zenpanic/oeil-api",
     },
-
-    {
-      name: "Aquafaba Temple",
-      image: "/images/portfolio/aquafaba.png",
-      description:
-        "Une application web pour un restaurant imaginaire, avec système de livraison intégré. Développé avec Next.js, le headless CMS Strapi et MongoDB.",
-      live: "https://aquafaba-temple.vercel.app",
-      source: "https://github.com/Zenpanic/aquafaba-frontend",
-    },
     {
       name: "Zen Weather",
       image: "/images/portfolio/zenweather.png",
@@ -36,12 +27,28 @@
       source: "https://github.com/Zenpanic/zen-weather",
     },
     {
+      name: "Aquafaba Temple",
+      image: "/images/portfolio/aquafaba.png",
+      description:
+        "Une application web pour un restaurant imaginaire, avec système de livraison intégré. Développé avec Next.js, le headless CMS Strapi et MongoDB.",
+      live: "https://aquafaba-temple.vercel.app",
+      source: "https://github.com/Zenpanic/aquafaba-frontend",
+    },
+    {
       name: "Zen Cosmos",
       image: "/images/portfolio/zencosmos.png",
       description:
         "Un projet frontend ayant pour but d'informer sur les astéroïdes paasant à proximité de la Terre pour n'importe quelle date donnée. Développé avec Svelte, utilise l'API NEO de la NASA.",
       live: "https://zen-cosmos.netlify.app/",
       source: "https://github.com/Zenpanic/Zen-Cosmos",
+    },
+    {
+      name: "A Vous de Jouer !",
+      image: "/images/portfolio/avousdejouer.png",
+      description:
+        "Site vitrine pour une association rennaise de création et location de jeux en bois. Développé sous Svelte.",
+      live: "https://avousdejouer.vercel.app/",
+      source: "",
     },
     {
       name: "Way of Speaking",
