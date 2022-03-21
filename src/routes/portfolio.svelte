@@ -19,14 +19,6 @@
       sourceBack: "https://github.com/Zenpanic/oeil-api",
     },
     {
-      name: "Zen Weather",
-      image: "/images/portfolio/zenweather.png",
-      description:
-        "Une application web météo élégante et minimaliste. Légère, sans publicité ni tracking: rien que les prévisions météo. Conçue avec React et l'API OpenWeather.",
-      live: "https://zen-weather.vercel.app/",
-      source: "https://github.com/Zenpanic/zen-weather",
-    },
-    {
       name: "Aquafaba Temple",
       image: "/images/portfolio/aquafaba.png",
       description:
@@ -49,6 +41,14 @@
         "Site vitrine pour une association rennaise de création et location de jeux en bois. Développé sous Svelte.",
       live: "https://avousdejouer.vercel.app/",
       source: "",
+    },
+    {
+      name: "Zen Weather",
+      image: "/images/portfolio/zenweather.png",
+      description:
+        "Une application web météo élégante et minimaliste. Légère, sans publicité ni tracking: rien que les prévisions météo. Conçue avec Svelte, Bulma et l'API OpenWeather.",
+      live: "https://zenweather.netlify.app/",
+      source: "https://github.com/Zenpanic/zenweather-svelte",
     },
     {
       name: "Way of Speaking",
